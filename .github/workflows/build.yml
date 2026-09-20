@@ -7,11 +7,11 @@ on:
   pull_request:
     branches: [main]
     paths-ignore:
-      - '**.md'
+      - 'app/**'
   push:
     branches: [main]
     paths-ignore:
-      - '**.md'
+      - 'app/**'
       - '.github/workflows/release.yml'
   workflow_dispatch:
 
