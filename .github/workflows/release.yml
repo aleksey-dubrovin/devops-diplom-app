@@ -59,6 +59,8 @@ jobs:
         with:
           context: ./app
           push: true
+          provenance: false
+          sbom: false
           tags: |
             ${{ secrets.REGISTRY_URL }}/${{ env.IMAGE_NAME }}:${{ steps.version.outputs.version }}
             ${{ secrets.REGISTRY_URL }}/${{ env.IMAGE_NAME }}:latest
