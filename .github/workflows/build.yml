@@ -38,6 +38,8 @@ jobs:
         with:
           context: ./app
           push: false
+          provenance: false
+          sbom: false
           tags: ${{ env.IMAGE_NAME }}:pr-check
           cache-from: type=gha
           cache-to: type=gha,mode=max
@@ -68,6 +70,8 @@ jobs:
         with:
           context: ./app
           push: true
+          provenance: false
+          sbom: false
           tags: |
             ${{ secrets.REGISTRY_URL }}/${{ env.IMAGE_NAME }}:latest
             ${{ secrets.REGISTRY_URL }}/${{ env.IMAGE_NAME }}:sha-${{ steps.vars.outputs.sha_short }}
