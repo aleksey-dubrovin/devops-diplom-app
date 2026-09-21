@@ -162,8 +162,8 @@
     </main>
   </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/marked@12.0.0/marked.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/highlight.js@11.9.0/lib/common.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/4.3.0/marked.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
 
   <script>
     const chapters = [
@@ -180,7 +180,7 @@
       { file: '10-appendix.md',           title: 'Приложения' }
     ];
 
-    // Настройка marked
+    // marked v4 поддерживает опцию highlight
     marked.setOptions({
       highlight: function(code, lang) {
         if (lang && hljs.getLanguage(lang)) {
@@ -197,7 +197,6 @@
     const nav = document.getElementById('nav');
     const content = document.getElementById('content');
 
-    // Строим навигацию
     chapters.forEach((ch, idx) => {
       const a = document.createElement('a');
       a.href = '#' + ch.file;
@@ -210,7 +209,6 @@
       nav.appendChild(a);
     });
 
-    // Загрузка главы
     async function loadChapter(file) {
       content.innerHTML = '<p class="loading">Загрузка...</p>';
       document.querySelectorAll('.sidebar a').forEach(a => a.classList.remove('active'));
@@ -222,14 +220,11 @@
         if (!response.ok) throw new Error('HTTP ' + response.status);
         const md = await response.text();
         content.innerHTML = marked.parse(md);
-        // Подсветка кода
-        content.querySelectorAll('pre code').forEach(el => hljs.highlightElement(el));
       } catch (err) {
         content.innerHTML = `<div class="error">Не удалось загрузить ${file}: ${err.message}</div>`;
       }
     }
 
-    // Стартовая глава
     const initial = window.location.hash.replace('#', '') || 'README.md';
     loadChapter(initial);
   </script>
