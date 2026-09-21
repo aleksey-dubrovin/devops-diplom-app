@@ -5,29 +5,57 @@
   <title>Дипломный практикум в Netology</title>
   <style>
     body {
-      font-family: sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       background: #f5f5f5;
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh;
+      min-height: 100vh;
       margin: 0;
     }
     .card {
       background: white;
-      padding: 40px 60px;
+      padding: 48px 64px;
       border-radius: 12px;
       box-shadow: 0 4px 20px rgba(0,0,0,0.1);
       text-align: center;
+      max-width: 500px;
     }
-    h1 { color: #2c3e50; margin: 0 0 10px; }
-    p { color: #7f8c8d; margin: 0; }
+    h1 { color: #2c3e50; margin: 0 0 12px; font-size: 26px; }
+    p { color: #7f8c8d; margin: 0 0 24px; }
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .links a {
+      display: block;
+      padding: 12px 24px;
+      background: #0366d6;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: 500;
+      transition: background 0.2s;
+    }
+    .links a:hover { background: #0255b3; }
+    .links a.secondary {
+      background: #f6f8fa;
+      color: #24292e;
+      border: 1px solid #e1e4e8;
+    }
+    .links a.secondary:hover { background: #e9ecef; }
   </style>
 </head>
 <body>
   <div class="card">
     <h1>Дипломный практикум в Netology</h1>
-    <p>Версия: <span id="version">latest</span></p>
+    <p>DevOps-стек в Yandex Cloud</p>
+    <div class="links">
+      <a href="/docs.html">Пояснительная записка</a>
+      <a href="https://monitoring.dubrovins.ru" class="secondary">Grafana</a>
+      <a href="https://github.com/aleksey-dubrovin/devops-diplom-app" class="secondary">Репозиторий на GitHub</a>
+    </div>
   </div>
 </body>
 </html>
