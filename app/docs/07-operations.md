@@ -226,7 +226,7 @@ yc logging read --group-id e23k081nj19htprt2eqo --since 24h \
 
 **Консоль Audit Trails с фильтром:**
 
-![Консоль Audit Trails с фильтром](images/35-audit_logging.png)
+![Консоль Audit Trails с фильтром](/docs/images/35-audit_logging.png)
 
 ## 6.5 Диагностика типовых проблем
 

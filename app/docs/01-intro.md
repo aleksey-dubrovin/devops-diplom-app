@@ -77,7 +77,7 @@ DevOps-стека в облаке Yandex Cloud, включающего:
 
 **Общая схема проекта:**
 
-![Общая схема проекта](images/01-architecture.png)
+![Общая схема проекта](/docs/images/01-architecture.png)
 
 ## Репозитории проекта
 
@@ -87,4 +87,4 @@ DevOps-стека в облаке Yandex Cloud, включающего:
 
 **Репозиторий на GitHub:**
 
-![Репозиторий на GitHub](images/02-repos.png)
+![Репозиторий на GitHub](/docs/images/02-repos.png)

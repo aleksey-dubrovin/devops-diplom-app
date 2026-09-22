@@ -61,7 +61,7 @@ devops-diplom-infra/
 
 **Консоль Yandex Cloud, раздел IAM:**
 
-![Консоль Yandex Cloud, раздел IAM](images/03-service_account.png)
+![Консоль Yandex Cloud, раздел IAM](/docs//docs/images/03-service_account.png)
 
 ## 1.3 Backend Terraform в S3
 
@@ -105,7 +105,7 @@ terraform {
 
 **Консоль Object Storage, бакет**
 
-![Консоль Object Storage, бакет](images/04-object_storage.png)
+![Консоль Object Storage, бакет](/docs//docs/images/04-object_storage.png)
 
 ## 1.4 Модуль VPC
 
@@ -129,7 +129,7 @@ Managed Kubernetes.
 
 **Карта инфраструктуры:**
 
-![Карта инфраструктуры](images/05-vpc_groups.png)
+![Карта инфраструктуры](/docs//docs/images/05-vpc_groups.png)
 
 ## 1.5 Модуль Security Groups
 
@@ -148,7 +148,7 @@ Managed Kubernetes.
 
 **Консоль Security Groups:**
 
-![Консоль Security Groups](images/06-sg_groups.png)
+![Консоль Security Groups](/docs//docs/images/06-sg_groups.png)
 
 ## 1.6 Container Registry
 
@@ -169,7 +169,7 @@ resource "yandex_container_registry" "diplom" {
 
 **Консоль Container Registry:**
 
-![Консоль Container Registry](images/07-cr_valunrabilities.png)
+![Консоль Container Registry](/docs//docs/images/07-cr_valunrabilities.png)
 
 ## 1.7 Audit Trails и Logging Group
 
@@ -189,7 +189,7 @@ Logging Group. Настроен сбор событий для всей папк
 
 **Консоль Cloud Logging:**
 
-![Консоль Cloud Logging](images/08-cloud_logging.png)
+![Консоль Cloud Logging](/docs//docs/images/08-cloud_logging.png)
 
 ## 1.8 Применение инфраструктуры через CI/CD
 
@@ -210,11 +210,11 @@ Workflow `.github/workflows/infrastructure.yml` запускается при п
 
 **Вкладка Actions на GitHub:**
 
-![Вкладка Actions на GitHub](images/09-workflows_infra.png)
+![Вкладка Actions на GitHub](/docs//docs/images/09-workflows_infra.png)
 
 **Вывод `terraform plan` из workflow:** вывод `terraform plan` из логов workflow.
 
-![Вывод `terraform plan` из workflow](images/10-terraform_plan.png)
+![Вывод `terraform plan` из workflow](/docs//docs/images/10-terraform_plan.png)
 
 ## 1.9 Использованные приёмы
 

@@ -33,7 +33,7 @@ devops-diplom-app/
 
 **Консоль github workflows app:**
 
-![Консоль github workflows app](images/19-workflows_app.png)
+![Консоль github workflows app](/docs/images/19-workflows_app.png)
 
 ## 3.2 Статическая страница
 
@@ -77,7 +77,7 @@ nginx без дополнительной логики.
 
 **Отображение приложения в браузере:**
 
-![Отображение приложения в браузере](images/20-site_app.png)
+![Отображение приложения в браузере](/docs/images/20-site_app.png)
 
 ## 3.3 Dockerfile
 
@@ -144,7 +144,7 @@ resource "yandex_container_registry" "diplom" {
 
 **Версии приложения devops-diplom-app:**
 
-![Версии приложения devops-diplom-app](images/21-app_tags.png)
+![Версии приложения devops-diplom-app](/docs/images/21-app_tags.png)
 
 ## 3.6 Публикация образа вручную
 
@@ -199,7 +199,7 @@ docker push cr.yandex/crph52se6qjtjg937i7h/devops-diplom-app:v0.1.0
 
 **Консоль github workflow build and push:**
 
-![Консоль github workflow build and push](images/22-build_app.png)
+![Консоль github workflow build and push](/docs/images/22-build_app.png)
 
 ### release.yml
 
@@ -243,7 +243,7 @@ docker push cr.yandex/crph52se6qjtjg937i7h/devops-diplom-app:v0.1.0
 
 **Консоль github workflow release:**
 
-![Консоль github workflow release](images/23-release_app.png)
+![Консоль github workflow release](/docs/images/23-release_app.png)
 
 ## 3.8 Секреты CI/CD приложения
 
@@ -260,7 +260,7 @@ GitHub автоматически маскирует эти значения в 
 
 **Консоль github secrets:**
 
-![Консоль github secrets](images/24-git_secrets.png)
+![Консоль github secrets](/docs/images/24-git_secrets.png)
 
 ## 3.9 Итоги главы
 

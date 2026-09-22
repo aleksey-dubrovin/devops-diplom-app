@@ -23,7 +23,7 @@
 
 **Схема стека мониторинга:**
 
-![Схема стека мониторинга](images/26-monitoring_stack.png)
+![Схема стека мониторинга](/docs/images/26-monitoring_stack.png)
 
 ## 4.2 Развёртывание через Helm
 
@@ -136,7 +136,7 @@ grafana:
 
 **Распределением подов по двум узлам:**
 
-![Распределением подов по двум узлам](images/25-k8s_monitoring.png)
+![Распределением подов по двум узлам](/docs/images/25-k8s_monitoring.png)
 
 ## 4.4 Grafana с HTTPS
 
@@ -191,7 +191,7 @@ fake-сертификат. Оказалось, что начиная с верс
 
 **Цепочка сертификатов:**
 
-![Цепочка сертификатов](images/27-monitoring_tls.png)
+![Цепочка сертификатов](/docs/images/27-monitoring_tls.png)
 
 ## 4.5 Дашборды Grafana
 
@@ -209,13 +209,13 @@ fake-сертификат. Оказалось, что начиная с верс
 
 **Дашборд `Kubernetes / Compute Resources / Cluster`:**
 
-![Kubernetes / Compute Resources / Cluster](images/30-grafana_cluster.png)
+![Kubernetes / Compute Resources / Cluster](/docs/images/30-grafana_cluster.png)
 
-![Kubernetes / Compute Resources / Nodes](images/29-grafana_nodes.png)
+![Kubernetes / Compute Resources / Nodes](/docs/images/29-grafana_nodes.png)
 
 **Страница `Status → Targets` в Prometheus:**
 
-![Страница `Status → Targets` в Prometheus](images/28-prometheus_exporters.png)
+![Страница `Status → Targets` в Prometheus](/docs/images/28-prometheus_exporters.png)
 
 ## 4.6 Prometheus UI
 
@@ -404,7 +404,7 @@ INFO:werkzeug:10.112.1.90 - - [21/Sep/2026 11:20:58] "POST /webhook HTTP/1.1" 20
 
 **Уведомление в MAX с текстом алерта:**
 
-![Уведомление в MAX с текстом алерта](images/31-max_bot.png)
+![Уведомление в MAX с текстом алерта](/docs/images/31-max_bot.png)
 
 ## 4.9 PrometheusRule
 

@@ -21,7 +21,7 @@
 
 **Консоль Managed Kubernetes:**
 
-![Консоль Managed Kubernetes](images/11-k8s_master.png)
+![Консоль Managed Kubernetes](/docs/images/11-k8s_master.png)
 
 ## 2.2 Региональный мастер
 
@@ -58,7 +58,7 @@ resource "yandex_kubernetes_cluster" "this" {
 
 **Консоль Managed Kubernetes workers:**
 
-![Консоль Managed Kubernetes workers](images/12-k8s_workers.png)
+![Консоль Managed Kubernetes workers](/docs/images/12-k8s_workers.png)
 
 ## 2.3 Туннельный режим Cilium
 
@@ -86,7 +86,7 @@ VXLAN-инкапсуляция добавляет 50 байт служебных
 
 **Консоль рабочей нагрузки:**
 
-![Консоль рабочей нагрузки](images/13-k8s_pods.png)
+![Консоль рабочей нагрузки](/docs/images/13-k8s_pods.png)
 
 ## 2.4 Подключение внешних worker-узлов
 
@@ -139,7 +139,7 @@ resource "yandex_compute_instance" "worker" {
 
 **Консоль Compute Cloud:**
 
-![Консоль Compute Cloud](images/14-compute_vm.png)
+![Консоль Compute Cloud](/docs/images/14-compute_vm.png)
 
 ### Генерация манифеста NodeGroup
 
@@ -190,7 +190,7 @@ spec:
 
 **Консоль github с workflow external nodes:**
 
-![Консоль github с workflow external nodes](images/15-nodes_apply.png)
+![Консоль github с workflow external nodes](/docs/images/15-nodes_apply.png)
 
 ## 2.5 Bastion-хост
 
@@ -319,11 +319,11 @@ controller:
 
 **Консоль Kubernetes services:**
 
-![Консоль Kubernetes services](images/16-k8s_svc.png)
+![Консоль Kubernetes services](/docs/images/16-k8s_svc.png)
 
 **Консоль Балансировщики:**
 
-![Консоль Балансировщики](images/17-k8s_nlb.png)
+![Консоль Балансировщики](/docs/images/17-k8s_nlb.png)
 
 ## 2.7 Хранение секретов кластера
 
@@ -361,7 +361,7 @@ secrets:
 
 **Консоль Kubernetes secrets:**
 
-![Консоль Kubernetes secrets](images/18-k8s_secrets.png)
+![Консоль Kubernetes secrets](/docs/images/18-k8s_secrets.png)
 
 ## 2.8 Итоги главы
 

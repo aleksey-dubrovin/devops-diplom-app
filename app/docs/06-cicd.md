@@ -96,7 +96,7 @@ terraform init \
 
 **Консоль github workflow caches:**
 
-![Консоль github workflow caches](images/32-cicd_cache.png)
+![Консоль github workflow caches](/docs/images/32-cicd_cache.png)
 
 ## 5.3 CI/CD для K8s конфигурации
 
@@ -196,7 +196,7 @@ release и подождёт готовности.
 
 **Консоль github workflow k8s-helm:**
 
-![Консоль github workflow k8s-helm](images/33-helm_charts.png)
+![Консоль github workflow k8s-helm](/docs/images/33-helm_charts.png)
 
 ### 5.3.4 deploy.yml
 
@@ -233,7 +233,7 @@ Deployment'ов: `diplom-app` и `max-bot`.
 
 **Успешный запуск `Deploy App`:**
 
-![Консоль github workflow k8s-helm](images/34-deploy_app.png)
+![Консоль github workflow k8s-helm](/docs/images/34-deploy_app.png)
 
 ## 5.4 CI/CD для приложения
 
